@@ -1,7 +1,8 @@
-# Reboot-ChromeCast
+# Reboot-Chromecast
 Windows PowerShell script that will reboot Chromecast devices on my local network.  
   
 This script uses
+   - [gpsoauth](https://github.com/simon-weber/gpsoauth) by [simon-weber](https://github.com/simon-weber)
    - this [gist](https://gist.github.com/rithvikvibhu/952f83ea656c6782fbd0f1645059055d) by [rithvikvibhu](https://github.com/rithvikvibhu) to retrieve the **master_token** and the **access_token**.
    - [grpcurl](https://github.com/fullstorydev/grpcurl) by [fullstorydev](https://github.com/fullstorydev) to invoke **RPC** on **googlehomefoyer-pa.googleapis.com:443**  
 
