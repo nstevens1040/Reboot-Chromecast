@@ -14,7 +14,6 @@ NAME
 SYNTAX
     Reboot-Chromecast [-DeviceName] {Nick's TV | Google TV}  [<CommonParameters>]
     
-    
 PARAMETERS
     -DeviceName <string>
         
