@@ -14,6 +14,11 @@ function Reboot-Chromecast
     $import_path = "$($ENV:TEMP)\protos\google\internal\home\foyer"
     $chromecast_mac = $list[$DeviceName]
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+    $gpsoauth = @(cmd /c "pip3.9.exe list 2>NUL").Where({$_ -match 'gpsoauth'})
+    if([String]::IsNullOrEmpty($gpsoauth))
+    {
+        pip3.9.exe install gpsoauth
+    }
     if(!$chromecast_IPAddress)
     {
         $chromecast_IPAddress = @(Get-NetNeighbor).Where({$_.LinkLayerAddress -eq $chromecast_mac})[0].IPAddress
