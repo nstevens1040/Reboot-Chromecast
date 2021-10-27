@@ -1,5 +1,5 @@
 # Reboot-Chromecast
-Windows PowerShell script that will reboot Chromecast devices on my local network.
+Windows PowerShell script that will reboot Chromecast devices on my local network.  
 You will likely need to edit this script if you want to use it.  
   
 This script uses
