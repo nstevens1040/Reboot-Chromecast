@@ -2,7 +2,6 @@ function Reboot-Chromecast
 {
     [cmdletbinding()]
     Param(
-        [Parameter(Mandatory=$true)]
         [string]$DeviceName="Nick's Bedroom TV"
     )
     $list = [System.Collections.Generic.Dictionary[[string],[string]]]::New()
