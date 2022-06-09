@@ -8,11 +8,13 @@ This script uses
    - [grpcurl](https://github.com/fullstorydev/grpcurl) by [fullstorydev](https://github.com/fullstorydev) to invoke **RPC** on **googlehomefoyer-pa.googleapis.com:443**  
 # Usage
 ```ps1
+
 NAME
     Reboot-Chromecast
     
 SYNTAX
-    Reboot-Chromecast [-DeviceName] {Nick's TV | Google TV}  [<CommonParameters>]
+    Reboot-Chromecast [-DeviceName] <string>  [<CommonParameters>]
+    
     
 PARAMETERS
     -DeviceName <string>
@@ -23,5 +25,27 @@ PARAMETERS
         Parameter set name           (All)
         Aliases                      None
         Dynamic?                     false
-```  
+        
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see 
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216). 
+    
+    
+INPUTS
+    None
+    
+    
+OUTPUTS
+    System.Object
+    
+ALIASES
+    None
+    
+
+REMARKS
+    None
+
+```
 
