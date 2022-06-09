@@ -9,7 +9,10 @@ This script uses
   
 The script assumes that you have
    - set an environment variable named **HOMEGRAPH_SERVICE_ACCOUNT** to your Google service account's **email address** ```<service-account-name>@<project-id>.iam.gserviceaccount.com```
-   - hard-coded your Google master token by setting the environment variable **GOOGLE_MASTER_TOKEN** to the value of your master token  
+   - hard-coded your Google master token by setting the environment variable **GOOGLE_MASTER_TOKEN** to the value of your master token
+   - In this case, I have set an environment variable entitled **CHROMECASTMAC** to my Chromecast MAC address. This isn't necessary, but it was convenient for me during testing as a way to quickly retrieve that value.
+
+*You will need to remove the parameter DeviceName's default value unless you also happen to have a Chromecast named Nick's Bedroom TV*
 
 ## Quick Start
 Once you have set your environment variables, you can make **Reboot-Chromecast** available in a **Windows PowerShell** session by running the commands below.
