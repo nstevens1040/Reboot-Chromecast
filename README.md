@@ -9,7 +9,15 @@ This script uses
   
 The script assumes that you have
    - set an environment variable named **HOMEGRAPH_SERVICE_ACCOUNT** to your Google service account's **email address** ```<service-account-name>@<project-id>.iam.gserviceaccount.com```
-   - hard-coded your Google master token by setting the environment variable **GOOGLE_MASTER_TOKEN** to the value of your master token
+   - hard-coded your Google master token by setting the environment variable **GOOGLE_MASTER_TOKEN** to the value of your master token  
+
+## Quick Start
+Once you have set your environment variables, you can make **Reboot-Chromecast** available in a **Windows PowerShell** session by running the commands below.
+```ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+iex (irm https://raw.githubusercontent.com/nstevens1040/Reboot-Chromecast/main/Reboot-Chromecast.ps1)
+```  
   
 # Usage
 ```ps1
