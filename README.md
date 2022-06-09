@@ -8,7 +8,7 @@ This script uses
    - [grpcurl](https://github.com/fullstorydev/grpcurl) by [fullstorydev](https://github.com/fullstorydev) to invoke **RPC** on **googlehomefoyer-pa.googleapis.com:443**  
   
 The script assumes that you have
-   - set an environment variable named **HOMEGRAPH_SERVICE_ACCOUNT** to your Google service account's **email address** <service-account-name>@<project-id>.iam.gserviceaccount.com
+   - set an environment variable named **HOMEGRAPH_SERVICE_ACCOUNT** to your Google service account's **email address** ```<service-account-name>@<project-id>.iam.gserviceaccount.com```
    - hard-coded your Google master token by setting the environment variable **GOOGLE_MASTER_TOKEN** to the value of your master token
   
 # Usage
